@@ -21,6 +21,10 @@ void __fastcall TCaluculator::Button1Click(TObject *Sender)
     value2 = StrToFloat(Edit2->Text);
     value3 = StrToFloat(Edit3->Text);
 
-    Edit4->Text = FloatToStr((value1 + value2) / value3);
+    if (value3 == 0.0) {
+        Edit4->Text = "0‚Å‚ÍŠ„‚ê‚Ü‚¹‚ñ";
+    } else {
+        Edit4->Text = FloatToStr((value1 + value2) / value3);
+    }
 }
 //---------------------------------------------------------------------------
