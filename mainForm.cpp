@@ -24,7 +24,15 @@ void __fastcall TCaluculator::Button1Click(TObject *Sender)
     if (value3 == 0.0) {
         Edit4->Text = "0‚Å‚ÍŠ„‚ê‚Ü‚¹‚ñ";
     } else {
-        Edit4->Text = FloatToStr((value1 + value2) / value3);
+        Edit4->Text = FloatToStr(calculate(value1, value2, value3));
     }
 }
 //---------------------------------------------------------------------------
+
+
+long double TCaluculator::calculate(
+    long double value1, long double value2, long double value3
+)
+{
+    return (value1 + value2) / value3;
+}

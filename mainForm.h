@@ -19,7 +19,8 @@ __published:	// IDE 管理のコンポーネント
     TLabel *Label2;
     TButton *Button1;
     void __fastcall Button1Click(TObject *Sender);
-private:	// ユーザー宣言
+private:
+    long double calculate(long double value1, long double value2, long double value3);
 public:		// ユーザー宣言
     __fastcall TCaluculator(TComponent* Owner);
 };
