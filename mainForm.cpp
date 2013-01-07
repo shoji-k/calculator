@@ -14,3 +14,13 @@ __fastcall TCaluculator::TCaluculator(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TCaluculator::Button1Click(TObject *Sender)
+{
+    long double value1, value2, value3;
+    value1 = StrToFloat(Edit1->Text);
+    value2 = StrToFloat(Edit2->Text);
+    value3 = StrToFloat(Edit3->Text);
+
+    Edit4->Text = FloatToStr((value1 + value2) / value3);
+}
+//---------------------------------------------------------------------------

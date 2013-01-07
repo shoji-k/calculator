@@ -1,6 +1,6 @@
 object Caluculator: TCaluculator
-  Left = 347
-  Top = 174
+  Left = 405
+  Top = 177
   Width = 208
   Height = 334
   Caption = #38651#21331
@@ -31,7 +31,7 @@ object Caluculator: TCaluculator
     Top = 112
     Width = 19
     Height = 19
-    Caption = #65293
+    Caption = #247
     Font.Charset = SHIFTJIS_CHARSET
     Font.Color = clWindowText
     Font.Height = -19
@@ -74,5 +74,6 @@ object Caluculator: TCaluculator
     Height = 25
     Caption = #65309
     TabOrder = 4
+    OnClick = Button1Click
   end
 end

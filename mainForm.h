@@ -18,6 +18,7 @@ __published:	// IDE 管理のコンポーネント
     TLabel *Label1;
     TLabel *Label2;
     TButton *Button1;
+    void __fastcall Button1Click(TObject *Sender);
 private:	// ユーザー宣言
 public:		// ユーザー宣言
     __fastcall TCaluculator(TComponent* Owner);
