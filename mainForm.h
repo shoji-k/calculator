@@ -11,6 +11,13 @@
 class TCaluculator : public TForm
 {
 __published:	// IDE 管理のコンポーネント
+    TEdit *Edit1;
+    TEdit *Edit2;
+    TEdit *Edit3;
+    TEdit *Edit4;
+    TLabel *Label1;
+    TLabel *Label2;
+    TButton *Button1;
 private:	// ユーザー宣言
 public:		// ユーザー宣言
     __fastcall TCaluculator(TComponent* Owner);
